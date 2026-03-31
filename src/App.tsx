@@ -731,13 +731,12 @@ export default function App() {
       </section>
 
       {/* Gallery */}
-      <section id="gallery" className="py-16 bg-white">
+      <section id="gallery" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-slate-900 mb-4 text-center">Gallery</h2>
+          <h2 className="text-3xl font-bold text-slate-900 mb-4 text-center">Gallery</h2>
           <p className="text-slate-600 text-center mb-12 max-w-2xl mx-auto">
             A collection of moments from conferences, lectures, and collaborative research initiatives
           </p>
-          
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 group">
               <div className="aspect-video bg-slate-100 flex items-center justify-center overflow-hidden">
@@ -764,14 +763,6 @@ export default function App() {
                 <img src="/gallery/drbivek_teaching_paramedics.jpg" alt="Teaching Paramedics" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
               </div>
             </Card>
-          </div>
-                </div>
-              </Card>
-            ))}
-          </div>
-          
-          <div className="mt-12 text-center">
-            <p className="text-slate-600">More photos will be added soon. Stay tuned!</p>
           </div>
         </div>
       </section>
