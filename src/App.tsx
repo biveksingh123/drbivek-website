@@ -405,3 +405,70 @@ function PublicationCard({ title, journal, volume, publisher, doi, link, firstAu
     </Card>
   );
 }
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-slate-900 mb-4 text-center">Gallery</h2>
+          <p className="text-slate-600 text-center mb-12 max-w-2xl mx-auto">
+            A collection of moments from conferences, lectures, and collaborative research initiatives
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="aspect-video bg-slate-100 flex items-center justify-center overflow-hidden">
+                <img src="/gallery/dr_bivek_harvard_session.jpg" alt="Harvard Session" className="w-full h-full object-cover" />
+              </div>
+            </Card>
+            <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="aspect-video bg-slate-100 flex items-center justify-center overflow-hidden">
+                <img src="/gallery/dr_bivek_with_students.jpg" alt="Teaching Students" className="w-full h-full object-cover" />
+              </div>
+            </Card>
+            <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="aspect-video bg-slate-100 flex items-center justify-center overflow-hidden">
+                <img src="/gallery/drbivek_award_winner_tripleE.jpg" alt="Triple E Award" className="w-full h-full object-cover" />
+              </div>
+            </Card>
+            <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="aspect-video bg-slate-100 flex items-center justify-center overflow-hidden">
+                <img src="/gallery/drbivek_icrtharvard2020.jpg" alt="Harvard ICRT" className="w-full h-full object-cover" />
+              </div>
+            </Card>
+            <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="aspect-video bg-slate-100 flex items-center justify-center overflow-hidden">
+                <img src="/gallery/drbivek_teaching_paramedics.jpg" alt="Teaching Paramedics" className="w-full h-full object-cover" />
+              </div>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section - Re-added cleanly */}
+      <section id="contact" className="py-16 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-slate-900 mb-8">Contact & Collaboration</h2>
+          <p className="text-slate-600 mb-8">Interested in research collaboration or clinical consultation?</p>
+          <a href="mailto:bivek.singh@example.com" className="inline-block bg-teal-700 text-white px-8 py-3 rounded-md hover:bg-teal-800 transition-colors">
+            Get in Touch
+          </a>
+        </div>
+      </section>
+
+      <footer className="bg-slate-900 text-white py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <p>© 2026 Dr. Bivek Singh. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+  );
+}
+
+interface PublicationCardProps {
+  title: string;
+  journal: string;
+  volume: string;
+}
+
+const Card = ({ children, className = "" }: { children: React.ReactNode; className?: string }) => (
+  <div className={}>
+    {children}
+  </div>
+);
