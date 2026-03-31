@@ -1,8 +1,8 @@
-import img0 from './assets/dr_bivek_harvard_session.jpg';
-import img1 from './assets/dr_bivek_with_students.jpg';
-import img2 from './assets/drbivek_award_winner_tripleE.jpg';
-import img3 from './assets/drbivek_icrtharvard2020.jpg';
-import img4 from './assets/drbivek_teaching_paramedics.jpg';
+
+
+
+
+
 
 
 
