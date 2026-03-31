@@ -8,6 +8,11 @@ import img4 from './assets/drbivek_teaching_paramedics.jpg';
 
 
 
+
+
+
+
+
 import { useState, useEffect } from 'react';
 import { Menu, X, Mail, Phone, MapPin, Award, BookOpen, Users, Briefcase, GraduationCap, FileText, Globe, Image } from 'lucide-react';
 import { Button } from './components/ui/button';
