@@ -1,8 +1,8 @@
-import gal1 from './assets/dr_bivek_harvard_session.jpg';
-import gal2 from './assets/dr_bivek_with_students.jpg';
-import gal3 from './assets/drbivek_award_winner_tripleE.jpg';
-import gal4 from './assets/drbivek_icrtharvard2020.jpg';
-import gal5 from './assets/drbivek_teaching_paramedics.jpg';
+
+
+
+
+
 import { useState, useEffect } from 'react';
 import { Menu, X, Mail, Phone, MapPin, Award, BookOpen, Users, Briefcase, GraduationCap, FileText, Globe, Image } from 'lucide-react';
 import { Button } from './components/ui/button';
