@@ -828,8 +828,8 @@ export default function App() {
           </div>
 
           <div className="mt-12 text-center">
-            <p className="text-slate-600 mb-4">Registered with Nepal Medical Council, Reg. No. 16863</p>
-            <p className="text-slate-600">Gender: Male | Nationality: Nepali | DOB: March 8, 1988</p>
+            <p className="text-slate-600 mb-4"></p>
+            <p className="text-slate-600"></p>
           </div>
         </div>
       </section>
