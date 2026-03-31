@@ -6,6 +6,14 @@ const Card = ({ children, className = "" }: { children: React.ReactNode; classNa
   </div>
 );
 
+const PublicationCard = ({ title, journal, volume }: { title: string; journal: string; volume: string }) => (
+  <Card className="p-6">
+    <h3 className="font-bold text-slate-900 mb-2">{title}</h3>
+    <p className="text-sm text-teal-700 font-medium">{journal}</p>
+    <p className="text-sm text-slate-500">{volume}</p>
+  </Card>
+);
+
 export default function App() {
   return (
     <div className="min-h-screen bg-slate-50 font-sans text-slate-900">
@@ -15,17 +23,20 @@ export default function App() {
           <div className="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
             <a href="#about" className="hover:text-teal-700">About</a>
             <a href="#research" className="hover:text-teal-700">Research</a>
+            <a href="#publications" className="hover:text-teal-700">Publications</a>
             <a href="#gallery" className="hover:text-teal-700">Gallery</a>
           </div>
         </div>
       </nav>
 
-      <header className="bg-white py-20 border-b border-slate-100 text-center">
-        <div className="max-w-7xl mx-auto px-4">
+      <header className="bg-white py-20 border-b border-slate-100">
+        <div className="max-w-7xl mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-4">Dr. Bivek Singh</h1>
           <p className="text-xl text-teal-700 font-medium mb-6">Neurologist | Clinical Researcher | Medical Educator</p>
-          <p className="max-w-2xl mx-auto text-slate-600 leading-relaxed">
-            Specializing in Circadian Rhythm, Stroke, and Sleep Biology. Founder of MEDOL Global and NEDOL.
+          <p className="max-w-3xl mx-auto text-slate-600 leading-relaxed text-lg">
+            Specializing in Circadian Rhythm in Neurological Diseases, Stroke, and Sleep Biology. 
+            Founder of MEDOL Global, EDU-STUDIO, and NEDOL. 
+            Top 1% Global Reviewer & Engaged Academic of the Year 2024.
           </p>
         </div>
       </header>
@@ -33,21 +44,39 @@ export default function App() {
       <section id="about" className="py-16">
         <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12">
           <div>
-            <h2 className="text-2xl font-bold mb-6 text-slate-900">Academic Background</h2>
+            <h2 className="text-2xl font-bold mb-6 text-slate-900">Professional Profile</h2>
             <ul className="space-y-4 text-slate-600">
-              <li>• Visiting Professor, MSU Malaysia</li>
-              <li>• Harvard Medical School ICRT (2020)</li>
-              <li>• Top 1% Global Reviewer (Web of Science)</li>
-              <li>• Engaged Academic of the Year 2024 (Germany)</li>
+              <li><strong>Visiting Professor</strong> – Management and Science University (MSU), Malaysia</li>
+              <li><strong>Clinical Research Training (ICRT)</strong> – Harvard Medical School (2020)</li>
+              <li><strong>Founder</strong> – MEDOL Global (Launch: April 14, 2026)</li>
+              <li><strong>Scientific Editor</strong> – Expert in medical manuscript polishing and peer review</li>
             </ul>
           </div>
           <div>
-            <h2 className="text-2xl font-bold mb-6 text-slate-900">Research Focus</h2>
+            <h2 className="text-2xl font-bold mb-6 text-slate-900">Expertise & Focus</h2>
             <div className="flex flex-wrap gap-2">
-              {['Circadian Rhythm', 'Ischemic Stroke', 'Sleep Biology', 'Alzheimer’s', 'Medical Education'].map(topic => (
+              {['Circadian Rhythm', 'Ischemic Stroke', 'Sleep Biology', 'EEG Interpretation', 'Computational Neuroscience', 'Alzheimer’s Disease', 'Medical Education'].map(topic => (
                 <span key={topic} className="bg-teal-50 text-teal-700 px-3 py-1 rounded-full text-sm border border-teal-100">{topic}</span>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="publications" className="py-16 bg-slate-100">
+        <div className="max-w-7xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12">Selected Publications</h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            <PublicationCard 
+              title="Circadian patterns in ischemic stroke in the Shanghai population" 
+              journal="Journal of the Neurological Sciences" 
+              volume="Published: March 2026" 
+            />
+            <PublicationCard 
+              title="Dissociation Between Circadian Peaks of Ischemic Stroke Onset and Neurological Severity" 
+              journal="Secondary Analysis (n=406)" 
+              volume="In Progress" 
+            />
           </div>
         </div>
       </section>
@@ -66,7 +95,7 @@ export default function App() {
       </section>
 
       <footer className="bg-slate-900 text-white py-12 text-center">
-        <p>© 2026 Dr. Bivek Singh. All rights reserved.</p>
+        <p>© 2026 Dr. Bivek Singh. Neurologist & Researcher.</p>
       </footer>
     </div>
   );
