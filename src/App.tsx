@@ -748,7 +748,33 @@ export default function App() {
             A collection of moments from conferences, lectures, and collaborative research initiatives
           </p>
           
+          
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="aspect-video bg-slate-100 flex items-center justify-center overflow-hidden">
+                <img src="/gallery/dr_bivek_harvard_session.jpg" alt="Harvard Session" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+              </div>
+            </Card>
+            <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="aspect-video bg-slate-100 flex items-center justify-center overflow-hidden">
+                <img src="/gallery/dr_bivek_with_students.jpg" alt="Teaching Students" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+              </div>
+            </Card>
+            <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="aspect-video bg-slate-100 flex items-center justify-center overflow-hidden">
+                <img src="/gallery/drbivek_award_winner_tripleE.jpg" alt="Triple E Award" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+              </div>
+            </Card>
+            <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="aspect-video bg-slate-100 flex items-center justify-center overflow-hidden">
+                <img src="/gallery/drbivek_icrtharvard2020.jpg" alt="Harvard ICRT" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+              </div>
+            </Card>
+            <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="aspect-video bg-slate-100 flex items-center justify-center overflow-hidden">
+                <img src="/gallery/drbivek_teaching_paramedics.jpg" alt="Teaching Paramedics" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+              </div>
+            </Card>
             {/* Placeholder cards for future photos */}
             {[1, 2, 3, 4, 5, 6].map((item) => (
               <Card key={item} className="overflow-hidden hover:shadow-lg transition-shadow">
