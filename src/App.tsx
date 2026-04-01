@@ -257,15 +257,18 @@ export default function App() {
 
             {/* EDU-STUDIO Business Registration Patch */}
             <div className="bg-teal-50 border-2 border-teal-500/30 rounded-xl p-6 mb-8 text-center shadow-sm w-full">
-              <h3 className="text-slate-900 font-bold text-lg mb-2">Official Business Registration</h3>
+              <h3 className="text-slate-900 font-bold text-lg mb-2">Official Business Registration (पालिका दर्ता विवरण)</h3>
               <div className="grid sm:grid-cols-2 gap-4 text-slate-700 text-sm">
                 <div>
                   <p><strong>Business Name:</strong> ऐडु-स्टूडियो वाई डा. विवेक सिंह (Edu-Studio by Dr. Bivek Singh)</p>
+                  <p><strong>Registered Body:</strong> Letang Municipality (लेटाङ नगरपालिका)</p>
+                  <p><strong>Registration No:</strong> 23 (दर्ता नं.)</p>
+                  <p><strong>Reg. Date:</strong> 2082/12/03 (दर्ता मिति)</p>
                   <p><strong>Taxpayer Code:</strong> 81130700011602</p>
                 </div>
                 <div>
                   <p><strong>VAT/PAN:</strong> 127916844</p>
-                  <p><strong>Address:</strong> Morang, Province 1, Nepal</p>
+                  <p><strong>Address:</strong> Letang-3, Morang, Province 1, Nepal</p>
                   <p><strong>Contact:</strong> <a href="mailto:contact@drbiveksingh.com" className="hover:text-teal-700 underline">contact@drbiveksingh.com</a></p>
                 </div>
               </div>
